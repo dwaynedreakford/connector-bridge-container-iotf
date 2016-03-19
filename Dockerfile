@@ -1,13 +1,11 @@
-FROM ubuntu:14.04.3
+FROM ubuntu:14.04.4
 MAINTAINER ARM <doug.anson@arm.com>
-RUN apt-get update
-RUN apt-get -y install software-properties-common
-RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils
-RUN apt-get -y install unzip zip
 EXPOSE 22/tcp
 EXPOSE 8234/tcp
 EXPOSE 28519/tcp
 EXPOSE 28520/tcp
+RUN apt-get update
+RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils unzip zip
 RUN useradd arm -m -s /bin/bash 
 RUN mkdir -p /home/arm
 RUN chown arm.arm /home/arm
