@@ -31,7 +31,7 @@ run_configurator()
 
 main() 
 {
-   report_ip_address
+   # report_ip_address
    update_hosts
    run_bridge
    run_configurator
