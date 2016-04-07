@@ -2,9 +2,17 @@ mbed Device Connector integration bridge image importer for IBM IoTF
 
 Date: January 22, 2016
 
-Bridge source: https://github.com/ARMmbed/connector-bridge.git
+LOG:
+    4/7/2016: Updated with latest changes from bridge source (adjustments to changes in Watson IoT MQTT subscriptions). 
+              Please wipe and reload your bridge container. 
+              This change will fix issues with bidirectional interaction with mbed devices. 
 
-Prerequisites (Ubuntu 14.04 LTS only):
+Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
+
+Install directly into Bluemix as a Container:
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ARMmbed/connector-bridge-container-iotf.git)
+
+Local installation Prerequisites (Ubuntu 14.04 LTS only):
 - IBM Bluemix Account created and setup
 - Understanding if your default Bluemix namespace ("dev" used in sample below)
 - Understanding of your default Bluemix container namespace ("dev" used in sample below)
@@ -12,9 +20,7 @@ Prerequisites (Ubuntu 14.04 LTS only):
 - IBM Cloud Foundary utilities installed
 - Docker installed
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ARMmbed/connector-bridge-container-iotf.git)
-
-To import container image containing the connector-bridge runtime into Bluemix for instantiation:
+Local importation: Scripts to import container runtime containing the connector-bridge into Bluemix:
 
     ubuntu% ./build_connector_bridge.sh
 
