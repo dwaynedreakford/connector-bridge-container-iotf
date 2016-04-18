@@ -6,7 +6,6 @@ LOG:
     4/7/2016: Updated with latest changes from bridge source (adjustments to changes in Watson IoT MQTT subscriptions). 
               Please wipe and reload your bridge container. 
               This change will fix issues with bidirectional interaction with mbed devices. 
-
     4/18/2016: Updated with latest changes from bridge source... enables dynamic Watson IoT device types to be
                specified from the endpoint CoAP registration message ("ept" field). 
 
