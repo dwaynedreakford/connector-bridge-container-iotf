@@ -7,6 +7,9 @@ LOG:
               Please wipe and reload your bridge container. 
               This change will fix issues with bidirectional interaction with mbed devices. 
 
+    4/18/2016: Updated with latest changes from bridge source... enables dynamic Watson IoT device types to be specified
+               from the endpoint CoAP registration message ("ept" field). 
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
