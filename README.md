@@ -10,6 +10,8 @@ LOG:
     4/18/2016: Updated with latest changes from bridge source... enables dynamic Watson IoT device types to be
                specified from the endpoint CoAP registration message ("ept" field). 
 
+    4/22/2016: Updated with latest changes from bridge source... MQTT cleanups and bug fixes
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
