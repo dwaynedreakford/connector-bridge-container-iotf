@@ -12,6 +12,8 @@ LOG:
 
     4/22/2016: Updated with latest changes from bridge source... MQTT cleanups and bug fixes. Added configurator supporting url-unsafe values
 
+    4/26/2016: Updated with latest changes from bridge source... bug fixes
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
