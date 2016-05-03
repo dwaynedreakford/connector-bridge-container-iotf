@@ -14,6 +14,8 @@ LOG:
 
     4/26/2016: Updated with latest changes from bridge source... bug fixes. CoAP get() support updates .
 
+    5/03/2016: Updated with latest changes from bridge source... bug fixes.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
