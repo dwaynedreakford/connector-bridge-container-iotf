@@ -67,7 +67,7 @@ stages:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-    PORT: 28519,28520,8234
+    PORT: 1883,8883,22,28519,28520,8234
     DEPLOY_TYPE: red_black
     CONTAINER_NAME: ${CF_APP}
     COMMAND: "#!/bin/bash\n# The following are some example deployment scripts.  Use\
