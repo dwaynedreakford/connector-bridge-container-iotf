@@ -1,8 +1,6 @@
 mbed Device Connector integration bridge image importer for IBM IoTF
 
-Date: January 22, 2016
-
-LOG:
+Original Date: January 22, 2016
 
     4/7/2016: Updated with latest changes from bridge source (adjustments to changes in Watson IoT MQTT subscriptions). 
               Please wipe and reload your bridge container. 
