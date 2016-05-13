@@ -3,6 +3,7 @@ mbed Device Connector integration bridge image importer for IBM IoTF
 Date: January 22, 2016
 
 LOG:
+
     4/7/2016: Updated with latest changes from bridge source (adjustments to changes in Watson IoT MQTT subscriptions). 
               Please wipe and reload your bridge container. 
               This change will fix issues with bidirectional interaction with mbed devices. 
@@ -17,6 +18,8 @@ LOG:
     5/03/2016: Updated with latest changes from bridge source... bug fixes.
 
     5/06/2016: Updated with latest changes from bridge source... bug fixes.
+
+    5/13/2016: Updated with latest changes from bridge source... bug fixes. Support for put async replies. 
 
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
