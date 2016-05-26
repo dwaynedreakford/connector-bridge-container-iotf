@@ -21,6 +21,8 @@ Original Date: January 22, 2016
 
     5/17/2016: Updated with latest bridge. Support for device attribute flow into cloud device description. JSON type parsing fixes. 
 
+    5/26/2016: Updated with latest bridge. JSON type parsing fixes.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
