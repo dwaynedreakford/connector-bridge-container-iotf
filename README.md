@@ -25,6 +25,8 @@ Original Date: January 22, 2016
 
     5/27/2016: Updated with latest bridge. Enabled REST versioning support
 
+    6/11/2016: Updated with latest bridge.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
