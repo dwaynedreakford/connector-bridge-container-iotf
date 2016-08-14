@@ -1,11 +1,9 @@
-FROM ubuntu:14.04.4
+FROM ubuntu:14.04.5
 MAINTAINER ARM <doug.anson@arm.com>
 EXPOSE 22/tcp
 EXPOSE 8234/tcp
 EXPOSE 28519/tcp
 EXPOSE 28520/tcp
-EXPOSE 1883/tcp
-EXPOSE 8883/tcp
 RUN apt-get update
 RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils unzip zip
 RUN useradd arm -m -s /bin/bash 

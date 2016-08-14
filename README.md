@@ -29,6 +29,8 @@ Original Date: January 22, 2016
 
     6/29/2016: Updated with latest bridge.
 
+    8/13/2016: Updated with latest bridge.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
