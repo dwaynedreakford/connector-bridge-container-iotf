@@ -33,6 +33,8 @@ Original Date: January 22, 2016
 
     8/14/2016: Updated with latest bridge.
 
+    8/16/2016: Updated with latest bridge. Bridge has optional long polling support.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
