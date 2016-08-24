@@ -90,6 +90,11 @@ set_watson_auth_token() {
    fi
 }
 
+set_perms() {
+  cd /home/arm
+  chown -R arm.arm .
+}
+
 main() 
 {
    # report_ip_address
@@ -98,6 +103,7 @@ main()
    set_mdc_api_token $*
    set_watson_api_key $*
    set_watson_auth_token $*
+   set_perms $*
    run_bridge
    run_configurator
    run_supervisord
