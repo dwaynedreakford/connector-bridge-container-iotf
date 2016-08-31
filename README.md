@@ -39,6 +39,8 @@ Original Date: January 22, 2016
 
     8/24/2016: Updated with latest bridge.
 
+    8/30/2016: Updated with latest bridge. Minor fix to CoAP responses where "verb" key is now "coap_verb" key - aligns with request payload structure.
+
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 Install directly into Bluemix as a Container:
