@@ -90,6 +90,23 @@ set_watson_auth_token() {
    fi
 }
 
+set_mbed_rest_api() {
+   MBED_REST_API="$6"
+   if [ "$2" = "use-long-polling" ]; then
+       MBED_REST_API="$7"
+   fi
+   if [ "${MBED_REST_API}X" != "X" ]; then
+        DIR="mds/connector-bridge/conf"
+        FILE="gateway.properties"
+        cd /home/arm
+        sed -e "s/mbed_rest_api_goes_here/${MBED_REST_API}/g" ${DIR}/${FILE} 2>&1 1> ${DIR}/${FILE}.new
+        mv ${DIR}/${FILE} ${DIR}/${FILE}.mbed_rest_api
+        mv ${DIR}/${FILE}.new ${DIR}/${FILE}
+        chown arm.arm ${DIR}/${FILE}
+   fi
+
+}
+
 set_perms() {
   cd /home/arm
   chown -R arm.arm .
@@ -103,6 +120,7 @@ main()
    set_mdc_api_token $*
    set_watson_api_key $*
    set_watson_auth_token $*
+   set_mbed_rest_api $*
    set_perms $*
    run_bridge
    run_configurator
