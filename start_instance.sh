@@ -1,11 +1,4 @@
-#!/bin/sh
-
-report_ip_address()
-{
-   IP_ADDRESS=`ifconfig | perl -nle'/dr:(\S+)/ && print $1' | tail -1`
-   HOSTNAME=`hostname`
-   echo "Container Hostname: " ${HOSTNAME} " IP: " ${IP_ADDRESS}
-}
+#!/bin/bash
 
 update_hosts()
 {
@@ -92,10 +85,6 @@ set_watson_auth_token() {
 
 set_mbed_rest_api() {
    MBED_REST_API="${@: -1}"
-
-   echo ${MBED_REST_API}
-   return 
-
    if [ "${MBED_REST_API}X" != "X" ]; then
         DIR="mds/connector-bridge/conf"
         FILE="gateway.properties"
@@ -115,13 +104,12 @@ set_perms() {
 
 main() 
 {
-   # report_ip_address
    update_hosts
    enable_long_polling $*
    set_mdc_api_token $*
    set_watson_api_key $*
    set_watson_auth_token $*
-   #set_mbed_rest_api $*
+   set_mbed_rest_api $*
    set_perms $*
    run_bridge
    run_configurator
