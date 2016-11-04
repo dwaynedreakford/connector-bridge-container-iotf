@@ -92,6 +92,10 @@ set_watson_auth_token() {
 
 set_mbed_rest_api() {
    MBED_REST_API="${@: -1}"
+
+   echo ${MBED_REST_API}
+   return 
+
    if [ "${MBED_REST_API}X" != "X" ]; then
         DIR="mds/connector-bridge/conf"
         FILE="gateway.properties"
